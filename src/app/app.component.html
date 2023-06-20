@@ -1,0 +1,37 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="hide">Content to be hidden</div> 
+        <div class="hide">Content to be hidden</div>
+        <div class="hide">Content to be hidden</div>
+    </div>
+    <section class="ad_1 mds_clr">
+        <ul class="row">
+        <li id="btnNewRequest" [class.ad_1_active]="activeItem == 1" (click)="activeItem = 1">
+            Test1
+        </li>
+        <li id="btnChangeRequest" [class.ad_1_active]="activeItem == 2" (click)="activeItem = 2">
+            Test2
+        </li>
+        <li id="btnExtensionRequest" [class.ad_1_active]="activeItem == 3" (click)="activeItem = 3">
+            Test3
+        </li>
+        <li id="btnBlockingRequest" [class.ad_1_active]="activeItem == 4" (click)="activeItem = 4">
+            Test4
+        </li>
+        </ul>
+  </section>
+  
+</div>
+<style>
+    .hidden{
+        color: red;
+        font-size: 18px;
+    }
+    li {
+        list-style: none;
+        padding: 0 10px;
+    }
+    .ad_1_active{
+        color: red;
+    }
+</style>
